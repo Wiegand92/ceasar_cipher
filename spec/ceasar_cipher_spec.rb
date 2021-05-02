@@ -13,4 +13,10 @@ describe "#ceasar_cipher" do
 
     expect(result).to eql("d")
   end
+
+  it "maintains case" do
+    result = ceasar_cipher("Aa", 0)
+
+    expect(result).to eql("Aa")
+  end
 end

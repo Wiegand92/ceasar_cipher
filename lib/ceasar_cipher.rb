@@ -8,6 +8,8 @@ def ceasar_cipher(string, shift_amount)
       " "
     elsif lowercase.include?(letter)
       lowercase[lowercase.index(letter) + shift_amount]
+    elsif uppercase.include?(letter)
+      uppercase[uppercase.index(letter) + shift_amount]
     else
       raise StandardError.new "I'm not sure what happened"
     end
