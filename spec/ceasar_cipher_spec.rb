@@ -19,4 +19,10 @@ describe "#ceasar_cipher" do
 
     expect(result).to eql("Aa")
   end
+
+  it "wraps the alphabet" do
+    result = ceasar_cipher("z", 1)
+
+    expect(result).to eql('a')
+  end
 end
