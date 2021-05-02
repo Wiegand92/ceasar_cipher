@@ -1,4 +1,6 @@
-Describe ceasar_cipher do
+require './lib/ceasar_cipher.rb'
+
+describe "#ceasar_cipher" do
   it "shifts letters by the appropriate amount" do
     amount = 2
     initial_letter = "a"
