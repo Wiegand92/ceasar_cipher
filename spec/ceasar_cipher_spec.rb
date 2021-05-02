@@ -23,6 +23,12 @@ describe "#ceasar_cipher" do
   it "wraps the alphabet" do
     result = ceasar_cipher("z", 1)
 
-    expect(result).to eql('a')
+    expect(result).to eql("a")
+  end
+
+  it "handles non-alphabet characters" do
+    result = ceasar_cipher("Hello World!?", 1)
+
+    expect(result).to eql("Ifmmp Xpsme!?")
   end
 end
